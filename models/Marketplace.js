@@ -1,8 +1,10 @@
 const mongoose = require('mongoose')
 
 const MarketplaceItemSchema = new mongoose.Schema({
-    description: String,
-    complete: Boolean
+    Title: {type: String},
+    Description: {type: String},
+    Photo: {type: String},
+    Price: {type: String}
 })
 
 const MarketplaceItem = mongoose.model('MarketplaceItem', MarketplaceItemSchema)
