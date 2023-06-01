@@ -5,7 +5,7 @@ const MarketplaceItemSchema = new mongoose.Schema({
     Description: {type: String},
     Photo: {type: String},
     Price: {type: String}
-    //Hello
+    
 })
 
 const MarketplaceItem = mongoose.model('MarketplaceItem', MarketplaceItemSchema)
